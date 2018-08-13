@@ -1,0 +1,217 @@
+    p{
+        color:#333;
+        line-height: 1.5em;
+    }
+    
+    .btn{
+        display: inline-block;
+        padding: 10px 30px;
+        background-color: var(--primarycolor);
+        color:var(--black);
+        text-decoration: none;
+        transition: all .3s;
+    }
+    .btn:hover{
+        background-color:var(--drak);
+        color:var(--white);
+    }
+    img{
+        width: 100%;
+    }
+    .nopa{
+        margin: 20!important;
+    }
+    /* GLOBAL */
+    
+    .fixed-width{
+        width: 1200px;
+        margin: auto;
+    }
+    .col-1{
+        width: calc(100% / 12 * 1);
+    }
+    .col-2{
+        width: calc(100% / 12 * 2);
+    }
+    .col-3{
+        width: calc(100% / 12 * 3);
+    }
+    .col-4{
+        width: calc(100% / 12 * 4);
+    }
+    .col-5{
+        width: calc(100% / 12 * 5);
+    }
+    .col-6{
+        width: calc(100% / 12 * 6);
+    }
+    .col-7{
+        width: calc(100% / 12 * 7);
+    }
+    .col-8{
+        width: calc(100% / 12 * 8);
+    }
+    .col-9{
+        width: calc(100% / 12 * 9);
+    }
+    .col-10{
+        width: calc(100% / 12 * 10);
+    }
+    .col-11{
+        width: calc(100% / 12 * 11);
+    }
+    .col-12{
+        width: calc(100% / 12 * 12);
+    }
+    [class*=col]{
+        float: left;
+        padding: 15px;
+    }
+    
+    /* nav */
+    nav{
+        height: 60px;
+        line-height: 60px;
+        /* 除了absolute(滑過就看不到),也可使用fixed(保持在正上方) */
+        position: absolute;
+        background-color: #bdbdbd;
+    }
+    nav .logo{
+        float: left;
+        background-color: transparent;
+        font-size: 20px;
+        
+    }
+    nav .menu{
+        position: relative;
+        left:300px;
+        font-size: 1px;
+    }
+    nav li{
+        float: left;
+        border: 0;
+    }
+    nav .a11{
+        color: #252525;
+    }
+    nav .a10{
+        color: #ffffff;
+    }
+    nav a{
+        
+        text-decoration: none;
+        display:block;
+        padding: 0 20px;
+    }
+    nav .search{
+        float: right;
+    }
+    
+    
+    /* #history  */
+    #history{
+        padding-top: 150px;
+        padding-bottom: 50px;
+        background-color: #ffffff;
+    }
+    #history .col-6{
+        float: right;
+    }
+    #history h1{
+        margin-bottom: 10px;
+    }
+    #history p{
+        margin-bottom: 60px;
+    }
+    /* #product */
+    #product{
+        margin-bottom: 80px;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+    }
+    #product .col-12{
+        width: 1200px;
+    }
+    #product .col-4 img{
+        padding: 15px;
+        height: 400px;
+        width: 400px;
+    }
+    /* about */
+    #about-me{
+        padding-bottom: 150px;
+        background-color: #cecece;
+        
+    }
+    #about-me .col-12{
+        text-align: center;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    #about-me #qa11{
+        position: relative;
+        left:250px;
+
+        text-align: left;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: 800px;
+        
+    }
+    #about-me img{
+        width: 250px;
+        padding-right: 50px;
+    }
+    #about-me h3{
+        margin-bottom: 20px;
+    }
+    #about-me p{
+        margin-bottom: 20px;
+        color: #696969;
+    }
+    #about-me a{
+        display: inline-block;
+    }
+    #about-me #lo{
+        padding-top: 20px;
+    }
+    #about-me i{
+        color: var(--primarycolor);
+        margin-right: 24px;
+    }
+
+    /* started */
+    #started{
+        text-align: center;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        background-color: #ffdcbb;
+    }
+    #started h2{
+        padding-bottom: 20px;
+    }
+    #started p{
+        padding-bottom: 30px;
+    }
+    
+    /* copyright */
+    #copyright{
+        background-color: #e9e9e9;
+        color: var(--white);
+        text-align: center;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    #copyright p{
+        padding-bottom: 30px;
+    }
+    #copyright a{
+        color: var(--light);
+        text-decoration: none;
+        margin: 10px 10px;
+    }
+   
+    
+    
+    

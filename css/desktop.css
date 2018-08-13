@@ -1,0 +1,270 @@
+@media screen and (min-width:1200px){
+p{
+    color:#333;
+    line-height: 1.5em;
+}
+
+.btn{
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: var(--primarycolor);
+    color:var(--black);
+    text-decoration: none;
+    transition: all .3s;
+}
+.btn:hover{
+    background-color:var(--drak);
+    color:var(--white);
+}
+img{
+    width: 100%;
+}
+.nopa{
+    padding: 0!important;
+}
+/* GLOBAL */
+
+.fixed-width{
+    width: 1200px;
+    margin: auto;
+}
+.col-1{
+    width: calc(100% / 12 * 1);
+}
+.col-2{
+    width: calc(100% / 12 * 2);
+}
+.col-3{
+    width: calc(100% / 12 * 3);
+}
+.col-4{
+    width: calc(100% / 12 * 4);
+}
+.col-5{
+    width: calc(100% / 12 * 5);
+}
+.col-6{
+    width: calc(100% / 12 * 6);
+}
+.col-7{
+    width: calc(100% / 12 * 7);
+}
+.col-8{
+    width: calc(100% / 12 * 8);
+}
+.col-9{
+    width: calc(100% / 12 * 9);
+}
+.col-10{
+    width: calc(100% / 12 * 10);
+}
+.col-11{
+    width: calc(100% / 12 * 11);
+}
+.col-12{
+    width: calc(100% / 12 * 12);
+}
+[class*=col]{
+    float: left;
+    padding: 15px;
+}
+
+/* nav */
+nav{
+    height: 60px;
+    line-height: 60px;
+    /* 除了absolute(滑過就看不到),也可使用fixed(保持在正上方) */
+    position: absolute;
+    background-color: transparent;
+}
+nav .logo{
+    float: left;
+    background-color: transparent;
+}
+nav .menu{
+    float: left;
+}
+nav li{
+    float: left;
+    border: 0;
+}
+nav a{
+    color:var(--white);
+    text-decoration: none;
+    display:block;
+    padding: 0 20px;
+}
+nav .search{
+    float: right;
+}
+header{
+    height: 1000px;
+    background-image:
+    linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.1)),
+     url(../img/001.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    /* 方法一 */
+    /* display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center; */
+
+    /* 方法二 */
+    display:table;
+}
+header h1{
+    color:var(--white);
+    font-size: 5em;
+    letter-spacing: 15px;
+    margin-bottom: 10px;
+}
+header p{
+    color:(--black);
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+header .fixed-width{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+/* #service */
+#service{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+#service i{
+    display: block;
+    color: var(--white);
+    background-color: var(--light);
+    width: 75px;
+    height: 75px;
+    text-align: center;
+    line-height: 75px;
+    border-radius: 50%;
+}
+#service h2{
+    text-align: center;
+}
+
+#service h3{
+    margin-bottom : 25px;
+}
+#service .col-4{
+    margin-bottom: 10px;
+    text-align: left;
+}
+/* #history  */
+#history{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #ddd;
+}
+#history h2{
+    margin-bottom: 30px;
+}
+#history h3{
+    margin-bottom: 30px;
+}
+#history p{
+    margin-bottom: 60px;
+}
+/* #product */
+#product .col-3{
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+}
+#product .col-3::before{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 300px;
+    background-color: rgba(0, 0, 0,.5);
+    position: absolute;
+    z-index: 11;
+}
+#product .col-3 img{
+    height: 300px;
+    width: auto;
+    z-index: 10;
+}
+#product .col-3 h4{
+    position: absolute;
+    top: 0;
+    left:0;
+    text-align: center;
+    width: 100%;
+    line-height: 300px;
+    color:var(--white);
+    letter-spacing: 2px;
+    z-index: 12;
+}
+
+/* #news */
+#news{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+#news h2{
+    text-align: center;
+}
+#news h3{
+    margin-bottom: 20px;
+}
+#news .news-info{
+    margin-bottom: 20px;
+}
+#news .news-date{
+    color:var(--primarycolor)
+}
+#news .col-12:nth-of-type(5){
+    text-align: center;
+    padding-top: 50px;
+}
+/* footer */
+footer{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #383838;
+    color: var(--white);
+} 
+footer h3{
+    margin-bottom:30px;
+}
+footer h4{
+    margin-bottom:10px;
+}
+footer p{
+    color: var(--white);
+}
+footer a{
+    color: var(--white);
+    text-decoration: none;
+}
+footer .comments{
+    margin-bottom: 20px;
+}
+/* copyright */
+#copyright{
+    background-color: #000000;
+    color: var(--white);
+}
+#copyright a{
+    color: var(--white);
+    text-decoration: none;
+}
+#copyright .col-4{
+    text-align: left;
+}
+#copyright .col-8{
+    text-align: right;
+}
+#copyright .col-8 a{
+    padding-left: 3px;
+    padding-right: 3px;
+}
+}
